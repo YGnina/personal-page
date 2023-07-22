@@ -1,6 +1,6 @@
 # Welcome to My GitHub Personal Page!
 
-[My page]("https://ygnina.github.io/")
+My page: "https://ygnina.github.io"
 
 ### Introduction
 Hi there! 👋 
