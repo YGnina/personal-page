@@ -44,11 +44,38 @@
             height: 38px;
             line-height: 38px;
         }
+        .menus{
+            float: left;
+            width: 200px;
+            height: 800px;
+            border: 1px solid grey;
+        }
+        .menus .header{
+            background-color: gold;
+            padding: 10px 5px;
+        }
 
-        .foot{
-            margin-bottom: 100px;
-            margin-left: 200px;
-            margin-right: 200px;
+        .menus .content a{
+            display: block;
+            padding: 5px 5px;
+            border-bottom: 1px dotted gray;
+        }
+
+        .img-container{
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .img{
+            width: 50px;
+        }
+
+        .footer{
+            margin-top: auto; /* Push the footer to the bottom of the page */
+            text-align: center;
+            padding: 20px 0;
+            color: #b0b0b0;
         }
 
     </style>
@@ -67,11 +94,41 @@
         <!-- float must have this -->
         <div style="clear: both;"></div>
     </div>
-    
+</div>
 
-<footer class="foot">
-    <p style="color: #b0b0b0;">Copyright © Nina</p>
+<div class = "menus">
+    <div class="item">
+        <div class="header">Countries that I visited</div>
+        <div class = "content">
+            <a id="china">China</a>
+            <a id="canada">Canada</a>
+            <a id="america">America</a>
+            <a id="mexico">Mexico</a>
+        </div>
+    </div>
+    
+</div>
+    
+<!-- <div class = "img-container">
+    <img src="map.jpg">
+</div> -->
+
+<div class="img-container">
+    <img src="map.jpg" id="mapImg">
+    <div id="pictureContainer" style="display: none;">
+      <!-- Add your pictures here -->
+      <img src="guna.jpeg">
+      <img src="picture2.jpg">
+      <!-- Add more pictures as needed -->
+    </div>
+</div>
+
+
+<footer class="footer">
+    <p>Map © studycli.org</p>
+    <p>Copyright © Nina</p>
 </footer>
+
 
 </body>
 
