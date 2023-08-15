@@ -3,7 +3,6 @@
 
 <head>
     <meta charset = "UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Nina's Experience</title>
     <style>
         body{
@@ -46,21 +45,67 @@
             line-height: 38px;
         }
 
+        h3{
+            text-align: center;
+            font-size: 2rem;
+        }
 
+        /* project */
+        .exp-group {
+            margin: auto;
+            width: 60%;
+            height: auto;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .exp-item,.pro-item {
+            list-style-type: none;
+            margin-bottom: 10px;
+            padding: 50px;
+        }
+
+        .exp-item img{
+            width:30%;
+            height: auto;
+            float: left;
+        }
+
+        .exp-item p{
+            font-size: 1.1rem;
+            float: right;
+            width: 50%;
+        }
+
+        .pro-item img{
+            width:40%;
+            height: auto;
+            float: left;
+        }
+
+        .pro-item p{
+            font-size: 1.1rem;
+            float: right;
+            width: 50%;
+        }
+
+        
+        /* resume */
         .resume-container {
             display: flex;
             margin-top: 10px;
             justify-content: center;
-            /* align-items: center; */
             height: 100vh; 
         }
+        
         .resume{
             width:500px; 
             height:400px;
         }
 
         .footer{
-            margin-top: auto; /* Push the footer to the bottom of the page */
+            margin-top: auto;
             text-align: center;
             padding: 20px 0;
             color: #b0b0b0;
@@ -84,6 +129,32 @@
         <div style="clear: both;"></div>
     </div>
 </div>
+
+<!-- project | description -->
+<section id="experience">
+<h3>Education</h3>
+<ul class="exp-group">
+    <li class="exp-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Seal_of_the_University_of_California%2C_San_Diego.svg/800px-Seal_of_the_University_of_California%2C_San_Diego.svg.png" alt="UCSD log">
+        <p><strong>B.S. in Computer Science</strong></p>
+        <p><b>Coursework:</b> Data Structure, Database System, Artificial Intelligence, Deep Learning, Computer Security </p>
+        <p><b>Technical Skills:</b> Microsoft Office, GitHub, Java, Python, C/C++, JavaScript, SQL, CSS, HTML, NumPy, pandas, MoviePy, BeautifulSoup</p>
+    </li>
+</ul>
+</section>
+
+<section id="experience">
+<h3>My Projects</h3>
+<ul class="exp-group">
+    <li class="pro-item">
+        <img src="pic/picasso.png">
+        <p><strong><a href=""></a>CSS Version Picasso Painting</strong></p>
+        <p> This is an interesting Picasso painting webpage that I made, maily using HTML and CSS.
+        
+    </li>
+</ul>
+</section>
+
 
 
 
