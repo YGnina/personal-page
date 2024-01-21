@@ -9,41 +9,43 @@
             margin: 0 auto;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
-        /* header style */
-        .header{
-            /* height: 38px; */
-            background-color: black;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+        .nav {
+            display: flex;
+            justify-content: flex-end;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: brown;
+            box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+            z-index: 10;
+        }
+        .nav-list {
+            display: flex;
+            margin-right: 2rem;
+        }
+        ul {
+            list-style: none;
+        }
 
+        .nav-list a {
+            display: block;
+            font-size: 2.2rem;
+            padding: 2rem;
         }
-        .header .container{
-            width: 1226px;
-            margin: 0 auto;
+        a {
+            text-decoration: none;
+            color: whitesmoke;
+        }
 
+        /* Add or modify styles for the main content */
+        main {
+            width: 100%;
+            height: 100vh;
         }
-        .header a{
-            font-size: 15px;
-            color: antiquewhite;
-            line-height: 40px;
-            display: inline-block;
-            margin-right: 5px;
 
-            text-decoration:none;
-
-        }
-        .header .menu{
-            float: left;
-            color: white;
-            height: 38px;
-            line-height: 38px;
-            
-        }
-        .header .account{
-            float: right;
-            color: wheat;
-            height: 38px;
-            line-height: 38px;
-        }
+        
         .menus{
             float: left;
             width: 200px;
@@ -83,46 +85,48 @@
 
 <body>
 
-<div class = "header">
-    <div class="container">
-        <div class="menu">
-            <a href="index.html">Home |</a>
-            <a href="experience.html">Experience |</a>
-            <a href="trip.html">Trips & pics</a>
+<nav id="navbar" class="nav">
+    <ul class="nav-list">
+        <li>
+        <a href="index.html">Home</a>
+        </li>
+        <li>
+        <a href="index.html #experience">Experience</a>
+        </li>
+        <li>
+        <a href="trip.html">Trip</a>
+        </li>
+    </ul>
+</nav>
+
+<main>
+    <div class = "menus">
+        <div class="item">
+            <div class="header">Countries that I visited</div>
+            <div class = "content">
+                <a id="china">China</a>
+                <a id="canada">Canada</a>
+                <a id="america">America</a>
+                <a id="mexico">Mexico</a>
+            </div>
         </div>
         
-        <!-- float must have this -->
-        <div style="clear: both;"></div>
     </div>
-</div>
+        
+    <!-- <div class = "img-container">
+        <img src="map.jpg">
+    </div> -->
 
-<div class = "menus">
-    <div class="item">
-        <div class="header">Countries that I visited</div>
-        <div class = "content">
-            <a id="china">China</a>
-            <a id="canada">Canada</a>
-            <a id="america">America</a>
-            <a id="mexico">Mexico</a>
+    <div class="img-container">
+        <img src="pic/map.jpg" id="mapImg">
+        <div id="pictureContainer" style="display: none;">
+        <!-- Add your pictures here -->
+        <img src="pic/guna.jpeg">
+        <img src="pic/picture2.jpg">
+        <!-- Add more pictures as needed -->
         </div>
     </div>
-    
-</div>
-    
-<!-- <div class = "img-container">
-    <img src="map.jpg">
-</div> -->
-
-<div class="img-container">
-    <img src="pic/map.jpg" id="mapImg">
-    <div id="pictureContainer" style="display: none;">
-      <!-- Add your pictures here -->
-      <img src="pic/guna.jpeg">
-      <img src="pic/picture2.jpg">
-      <!-- Add more pictures as needed -->
-    </div>
-</div>
-
+</main>
 
 <footer class="footer">
     <p>Map © studycli.org</p>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang= "en">
+
+<head>
+    <meta charset = "UTF-8">
+    <title> Nina's Website</title>
+    <style>
+        body{
+            margin: 0 auto;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        /* header style */
+        .header{
+            /* height: 38px; */
+            background-color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+        .header .container{
+            width: 1226px;
+            margin: 0 auto;
+
+        }
+        .header a{
+            font-size: 15px;
+            color: antiquewhite;
+            line-height: 40px;
+            display: inline-block;
+            margin-right: 5px;
+
+            text-decoration:none;
+
+        }
+        .header .menu{
+            float: left;
+            color: white;
+            height: 38px;
+            line-height: 38px;
+        }
+        .header .account{
+            float: right;
+            color: wheat;
+            height: 38px;
+            line-height: 38px;
+        }
+        /* sub header style */
+        .sub-header{
+            height: 100px;
+            background-color: #b0b0b0;
+        }
+        .sub-header .container{
+            width: 1120px;
+            margin: 0 auto;
+        }
+        .sub-header .logo{
+            width: 234px;
+            float: left;
+            line-height: 100px;
+
+        }
+        .sub-header .logo a img{
+            margin-top: 22px; 
+            display: inline-block;
+        }
+
+        .sub-header .menu-list{
+            float: left;
+            line-height: 100px;
+            /* border: 1px solid red; */
+            
+        }
+
+        .sub-header .menu-list a{
+            display: inline-block;
+            padding: 8 18px;
+            font-size: 20px;
+            color: #333;
+            margin: 10px;
+
+            text-decoration: none;
+        }
+
+        .sub-header .menu-list a:hover{
+            color: aqua;
+        }
+        .sub-header .search{
+            float: right;
+            /* height: 100px; */
+        }
+
+        .sub-header .ht{
+            height: 100px;
+        }
+
+        .intro{
+            display: block;
+            margin-top: 10px;
+            margin-left: 150px;
+            margin-right: 150px;
+            height: 100px;
+            float: inherit;
+        }
+
+        .intro .left-container{
+            height: fit-content;
+            float: left;
+            margin-left: 100px;
+        }
+
+        .intro .left-container .profile{
+             
+            border-radius: 50%;
+            border: 3px solid #b0b0b0;
+            
+        }
+
+        .intro .right-container{
+            height: fit-content;
+            float:right;
+            width: 60%;
+            margin-left:60px; 
+            
+        }
+        .intro .right-container p{
+            font-size: large;
+        }
+
+        .footer{
+            /* margin-left: 200px;
+            margin-right: 200px; */
+            margin-top: auto; /* Push the footer to the bottom of the page */
+            text-align: center;
+            padding: 20px 0;
+            color: #b0b0b0;
+        
+        }
+
+        .corner-ribbon {
+            position: absolute;
+            top: 20px;
+            right: 10px;
+            background-color: #692718;
+            color: white;
+            padding: 5px 15px;
+            transform: rotate(30deg);
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="corner-ribbon">Lucky!</div>
+<div class = "header">
+    <div class="container">
+        <div class="menu">
+            <a href="index.html">Home |</a>
+            <a href="experience.html">Experience |</a>
+            <a href="trip.html">Trips & pics</a>
+        </div>
+        
+        <!-- float must have this -->
+        <div style="clear: both;"></div>
+    </div>
+    
+</div>
+
+<div class = "sub-header">
+    <div class="container">
+        <div class="ht logo">
+            <a>
+                <img src="pic/logo.jpg" style="height: 56px; width: 56px;" alt="">
+            </a>
+            
+        </div>
+        <div class = "ht menu-list">
+            <a href="https://github.com/YGnina">GitHub</a>
+            <a href="https://leetcode.com/NinaNing">LeetCode</a>
+            <a href="https://www.linkedin.com/in/nina-gu-577a10212">LinkedIn</a>
+        </div>
+        <div class = "clear:both;"></div>
+    </div>
+
+</div>
+
+
+
+<section class="intro">
+    <div class="left-container">
+       <img class="profile" src="pic/profile.jpeg">
+
+    </div>
+
+    <div class="right-container">
+        <p>
+            Hello there! 
+            <br> I'm Nina, a curious mind with a passion for exploring the endless possibilities of computer science. 
+            <br>
+            <br> A little bit about me:
+            <br>🎓 I hold a B.S. in Computer Science from UC San Diego.
+            <br>🏞️ When I'm not diving into lines of code, you can find me exploring different hiking trails and enjoying the beauty of nature.
+            <br>📸 I'm an amateur photography who likes to take photos of animals, plants and foods. Armed with just my smartphone, I have managed to create captivating and visually appealing images.
+            <br>
+            <br > If you have interest, feel free to connect me on LinkedIn or contact me through other social media.
+        </p>
+    </div>
+
+</section>
+
+<footer class="footer">
+    <img class="guana" src="pic/guna.jpeg" alt="my trip to guanajuato">
+    <p>Copyright © Nina</p>
+</footer>
+
+</body>
+
+</html>
+
