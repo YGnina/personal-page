@@ -9,6 +9,20 @@
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet">
+    <script>
+        function getRandomProjectLink() {
+            // random link funcion to be determined
+            var projectLinks = [
+                "https://ygnina.github.io/Biblio-Boutique/",  
+                "https://codepen.io/Nina-Goo/full/RwErorv",
+                "https://www.bilibili.com/video/BV1pp4y1C7Cj/?spm_id_from=333.999.0.0&vd_source=1f712f6a8a3cac9378e67d3b25ac978b",
+                "https://ygnina.github.io/fa22-cse110-lab5/expose.html",
+            ];
+
+            var randomIndex = Math.floor(Math.random() * projectLinks.length);
+            window.location.href = projectLinks[randomIndex];
+        }
+    </script>
 
     <style>
         body {
@@ -185,6 +199,10 @@
             <li>
                 <a href="#experience">Experience</a>
             </li>
+
+            <li>
+                <a href="javascript:void(0);" onclick="getRandomProjectLink();">Explore a Random Project!</a>
+            </li>
         </ul>
     </nav>
 
@@ -204,7 +222,7 @@
             <ul class="exp-group">
                 <li class="pro-item">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Seal_of_the_University_of_California%2C_San_Diego.svg/800px-Seal_of_the_University_of_California%2C_San_Diego.svg.png" alt="UCSD log">
-                    <p><strong>B.S. in <b> Computer Science</strong></p>
+                    <p><strong>B.S. in <b> Computer Science </strong></p>
                     <p><b>Coursework:</b> Data Structure, Database System, Artificial Intelligence, Deep Learning, Computer Security </p>
                     <p><b>Technical Skills:</b>  Git, Microsoft SQL Server, Java, Python, C/C++, C#, JavaScript, CSS, HTML5, React, Node.js, NumPy, pandas, BeautifulSoup, REST API</p>
                 </li>
