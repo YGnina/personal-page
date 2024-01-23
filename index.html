@@ -1,29 +1,40 @@
 <!DOCTYPE html>
-<html lang= "en">
+<html lang="en">
 
-  <head>
-    <meta charset = "UTF-8">
+<head>
+    <meta charset="UTF-8">
     <link rel="stylesheet">
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet">
 
     <style>
-         body{
-            margin: 0 auto;
+        body {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #fff;
+            background-color: #1a1a1a;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
         }
+        h1 {
+            font-size: 4rem;
+            color: #ffd700;
+        }
+
+        h3{
+            text-align: center;
+            font-size: 2rem;
+            color:#ccc;
+        }
+        /* Navigation */
+        a{
+            text-decoration: none;
+            color: #ffd700;
+        }
+
         .nav {
             display: flex;
             justify-content: flex-end;
@@ -31,41 +42,29 @@
             top: 0;
             left: 0;
             width: 100%;
-            background: brown;
-            box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+            background-color:#734b6d;
+            /* background: linear-gradient(to right, #42275a, #734b6d); */
+            /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); */
             z-index: 10;
         }
+
         .nav-list {
             display: flex;
             margin-right: 2rem;
         }
-        ul {
-            list-style: none;
-        }
 
         .nav-list a {
             display: block;
-            font-size: 2.2rem;
-            padding: 2rem;
+            font-size: 1.2rem;
+            padding: 1rem;
+            color: #ffd700;
         }
-        a {
-            text-decoration: none;
-            color: whitesmoke;
-        }
-
-        /* home page */
-        h1 {
-            font-size: 6rem;
+        ul{
+            list-style: none;
         }
 
-        h1, h2, h3 {
-            font-weight: 700;
-            text-align: center;
-            color: antiquewhite;
-        }
-        h3{
-            font-size: 2rem;
-        }
+        /* Welcome Section */
+        
         .welcome-section {
             display: flex;
             flex-direction: column;
@@ -73,64 +72,56 @@
             align-items: center;
             width: 100%;
             height: 100vh;
-            background-color: #000;
+            background-color: #222;
         }
 
-        .welcome-section > p {
+        p {
             font-size: 1.5rem;
-            font-weight: 200;
-            font-style: italic;
-            color: antiquewhite;
+            font-weight: 300;
+            color: #ccc;
         }
 
-        /* experience project */
+        /* Experience Section */
         .experience-section {
             background: #303841;
-            padding: 10rem 2rem;
+            color: #fff;
+            padding: 3rem 2rem;
         }
 
         .exp-group {
             margin: auto;
-            width: 60%;
-            height: auto;
+            width: 90%;
+            max-width: 1200px;
             overflow: hidden;
-            display: flex;
-            flex-direction: column;
         }
 
-        .exp-item,.pro-item {
+        .pro-item {
             list-style-type: none;
-            margin-bottom: 10px;
-            padding: 50px;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #424242;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+            display: flex;
+            align-items: center;
         }
 
-        .exp-item img{
-            width: 30%;
-            height: auto;
-            float: left;
+        .pro-item:hover {
+            transform: scale(1.03);
         }
 
-        .exp-item p{
-            font-size: 1.1rem;
-            float: right;
-            width: 50%;
-            color: antiquewhite;
+        .pro-item img {
+            width: 400px;
+            max-height: 100%;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-right: 20px;
         }
 
-        .pro-item img{
-            width:40%;
-            height: auto;
-            float: left;
+        .pro-item div {
+            flex: 1;
         }
-
-        .pro-item p{
-            font-size: 1.1rem;
-            float: right;
-            width: 50%;
-            color: antiquewhite;
-        }
-
-        
         /* resume */
         .resume-container {
             display: flex;
@@ -140,185 +131,170 @@
         }
         
         .resume{
-            width:500px; 
-            height:400px;
+            width:700px; 
+            height:600px;
         }
 
+        /* Contact Section */
         .contact-section {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            background: #1a1a1a;
+            color: #fff;
+            padding: 4rem 2rem;
             text-align: center;
-            padding: 0 2rem;
-            background: #000;
         }
+
         .contact-links {
             display: flex;
             justify-content: center;
-            width: 100%;
-            max-width: 980px;
-            margin-top: 4rem;
             flex-wrap: wrap;
         }
-        .contact-details {
-            font-size: 2.4rem;
-            text-shadow: 2px 2px 1px #1f1f1f;
-            transition: transform 0.3s ease-out;
-        }
+
         .btn {
             display: inline-block;
             padding: 1rem 2rem;
-            border-radius: 2px;
+            margin: 10px;
+            border-radius: 4px;
+            background-color: #734b6d;
+            color: #fff;
+            text-decoration: none;
         }
 
-        footer{
-            /* margin-left: 200px;
-            margin-right: 200px; */
-            margin-top: auto; /* Push the footer to the bottom of the page */
+        .btn:hover {
+            background-color: #42275a;
+        }
+
+        /* Footer Section */
+        .footer {
+            background: #222;
+            color: #b0b0b0;
             text-align: center;
             padding: 20px 0;
-            color: #b0b0b0;
-            background: #000;
+            margin-top: auto;
         }
-
     </style>
 
-  </head>
-  <body>
-    <!-- START NAV -->
+</head>
+
+<body>
 
     <nav id="navbar" class="nav">
-      <ul class="nav-list">
-        <li>
-          <a href="#welcome-section">Home</a>
-        </li>
-        <li>
-          <a href="#experience">Experience</a>
-        </li>
-        <!-- <li>
-          <a href="trip.html">Trip</a>
-        </li> -->
-      </ul>
+        <ul class="nav-list">
+            <li>
+                <a href="#welcome-section">Home</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+        </ul>
     </nav>
 
-    <!-- END NAV -->
-
-    <!-- START WELCOME SECTION -->
-
     <section id="welcome-section" class="welcome-section">
-      <h1>Hey I am Nina</h1>
-    <p>
-        <br>🎓 I hold a B.S. in Computer Science from UC San Diego.
-        <br>🏞️ When I'm not diving into lines of code, you can find me exploring different hiking trails
-        <br>📸 I'm an amateur photography who likes to take photos of animals, plants and foods. 
-        <br > If you have interest, feel free to connect me on LinkedIn or contact me through other social media.
-    </p>
+        <h1>Hey I am Nina</h1>
+        <p>
+            <br>🎓 I hold a B.S. in Computer Science from UC San Diego.
+            <br>🏞️ When I'm not diving into lines of code, you can find me exploring different hiking trails
+            <br>📸 I'm an amateur photographer who likes to take photos of animals, plants, and foods.
+            <br> If you have interest, feel free to connect me on LinkedIn or contact me through other social media.
+        </p>
     </section>
 
-    <!-- END WELCOME SECTION -->
-
-    <!-- START PROJECTS SECTION -->
     <section id="experience-section" class="experience-section">
         <section id="experience">
             <h3>Education</h3>
             <ul class="exp-group">
-                <li class="exp-item">
+                <li class="pro-item">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Seal_of_the_University_of_California%2C_San_Diego.svg/800px-Seal_of_the_University_of_California%2C_San_Diego.svg.png" alt="UCSD log">
-                    <p><strong>B.S. in Computer Science</strong></p>
+                    <p><strong>B.S. in <b> Computer Science</strong></p>
                     <p><b>Coursework:</b> Data Structure, Database System, Artificial Intelligence, Deep Learning, Computer Security </p>
-                    <p><b>Technical Skills:</b> Microsoft Office, GitHub, Java, Python, C/C++, JavaScript, SQL, CSS, HTML, NumPy, pandas, MoviePy, BeautifulSoup</p>
+                    <p><b>Technical Skills:</b>  Git, Microsoft SQL Server, Java, Python, C/C++, C#, JavaScript, CSS, HTML5, React, Node.js, NumPy, pandas, BeautifulSoup, REST API</p>
                 </li>
             </ul>
-            </section>
-            
-            <section id="experience">
+
+        </section>
+        <section id="experience">
             <h3>Projects</h3>
-            
+
             <ul class="exp-group">
                 <li class="pro-item">
-                    <img src="pic/scrape.jpg">
-                    <p><strong>Web Scraping Tool</strong></p>
-                    <p> A customized web scraping tool to efficiently identify and target potential customers for the salesman. Extracts and analyzes data using python, requests and BeautifulSoup, and gives a user-friendly GUI to elevate the experience. </p>
-            
+                    <img src="pic/scrape.jpg" alt="Web Scraping Tool">
+                    <div>
+                        <p><a href=""><strong>Web Scraping Tool</strong></a></p>
+                        <p> A customized web scraping tool to efficiently identify and target potential customers for
+                            the salesman. Extracts and analyzes data using python, requests and BeautifulSoup, and
+                            gives a user-friendly GUI to elevate the experience. </p>
+                    </div>
                 </li>
-            
+
                 <li class="pro-item">
-                    <img src="pic/picasso.jpg">
-                    <p><a href="https://github.com/YGnina/myfreecodecamp/tree/main/Responsive%20Web%20Design/Picasso%20Painting"><strong>CSS Version Picasso Painting</strong></a></p>
-                    <p> An interesting Picasso painting webpage with 3 people singing and playing the guitar. Uses advanced concepts including SVG icons and CSS positioning to create a visually engaging and interactive user experience. </p>
-                    
+                    <img src="pic/picasso.jpg" alt="CSS Version Picasso Painting">
+                    <div>
+                        <p><a href="https://github.com/YGnina/myfreecodecamp/tree/main/Responsive%20Web%20Design/Picasso%20Painting"><strong>CSS Version Picasso Painting</strong></a></p>
+                        <p> An interesting Picasso painting webpage with 3 people singing and playing the guitar. Uses
+                            advanced concepts including SVG icons and CSS positioning to create a visually engaging
+                            and interactive user experience. </p>
+                    </div>
                 </li>
-            
+
                 <li class="pro-item">
-                    <img src="pic/quote.jpg">
-                    <p><a href="https://codepen.io/Nina-Goo/full/jOXWVaV"><strong>Random Quote Machine</strong></a></p>
-                    <p> A web application using JavaScript, React and quote API that provides users with a steady stream of quotes from various sources. The integration of social media sharing options enables users to share the quotes with the world.</p>
+                    <img src="pic/quote.jpg" alt="Random Quote Machine">
+                    <div>
+                        <p><a href="https://codepen.io/Nina-Goo/full/jOXWVaV"><strong>Random Quote Machine</strong></a></p>
+                        <p> A web application using JavaScript, React, and quote API that provides users with a steady
+                            stream of quotes from various sources. The integration of social media sharing options
+                            enables users to share the quotes with the world.</p>
+                    </div>
                 </li>
-            
+
                 <li class="pro-item">
-                    <img src="pic/2064.jpg">
-                    <p><a href="https://github.com/YGnina/AI-Games/tree/main/pa2"><strong>2048 Game</strong></a></p>
-                    <p> An AI-powered solution for the popular 2048 game utilizing the advanced Expectimax search algorithm. Creates a strategic game-playing agent capable of making intelligent decisions to maximize tile merges and achieve higher scores. Through this project, I honed problem-solving skills and gained a deeper understanding of artificial intelligence principles</p>
-                    
+                    <img src="pic/2064.jpg" alt="2048 Game">
+                    <div>
+                        <p><a href="https://github.com/YGnina/AI-Games/tree/main/pa2"><strong>2048 Game</strong></a></p>
+                        <p> An AI-powered solution for the popular 2048 game utilizing the advanced Expectimax search
+                            algorithm. Creates a strategic game-playing agent capable of making intelligent decisions to
+                            maximize tile merges and achieve higher scores. Through this project, I honed problem-solving
+                            skills and gained a deeper understanding of artificial intelligence principles</p>
+                    </div>
                 </li>
-            
+
                 <li class="pro-item">
-                    <img src="pic/planner.jpg">
-                    <p><a href="https://www.youtube.com/watch?v=_mwt6euJh20&feature=youtu.be"><strong>Powell Puff Planner</strong></a></p>
-                    <p> A tailored planner app catering to the unique needs of UCSD students within the quarter system. Enables a seamless integration with WebReg, streamlining the import of crucial academic data, ensuring accurate and up-to-date scheduling. </p>
+                    <img src="pic/planner.jpg" alt="Powell Puff Planner">
+                    <div>
+                        <p><a href="https://www.youtube.com/watch?v=_mwt6euJh20&feature=youtu.be"><strong>Powell Puff
+                                    Planner</strong></a></p>
+                        <p> A tailored planner app catering to the unique needs of UCSD students within the quarter
+                            system. Enables a seamless integration with WebReg, streamlining the import of crucial academic
+                            data, ensuring accurate and up-to-date scheduling. </p>
+                    </div>
                 </li>
             </ul>
-            </section>
-            
-            
-            
-            <section id="resume">
-                <h3>Resume</h3>
-                <div class="resume-container">
-                    <iframe class = "resume" src="file/Nina resume.pdf"></iframe>
-                </div>
-            </section>
+        </section>
+        <section id="resume">
+            <h3>Resume</h3>
+            <div class="resume-container">
+                <iframe class = "resume" src="file/Nina resume.pdf"></iframe>
+            </div>
+        </section>
     </section>
-    
 
-    <!-- START CONTACT SECTION -->
 
     <section id="contact" class="contact-section">
-        
-      <div class="contact-links">
-        <a
-          href="https://leetcode.com/NinaNing"
-          target="_blank"
-          class="btn contact-details"
-          ><i class="fab fa-leetcode-square"></i> Leetcode</a
-        >
-        <a
-          id="profile-link"
-          href="https://github.com/YGnina"
-          target="_blank"
-          class="btn contact-details"
-          ><i class="fab fa-github"></i> GitHub</a
-        >
 
-        <a
-          id="profile-link"
-          href="https://www.linkedin.com/in/nina-gu-577a10212"
-          target="_blank"
-          class="btn contact-details"
-          ><i class="fab fa-linkedin"></i> LinkedIn</a
-        >
-      </div>
+        <div class="contact-links">
+            <a href="https://leetcode.com/NinaNing" target="_blank" class="btn contact-details"><i
+                    class="fab fa-leetcode-square"></i> Leetcode</a>
+            <a id="profile-link" href="https://github.com/YGnina" target="_blank" class="btn contact-details"><i
+                    class="fab fa-github"></i> GitHub</a>
+            <a id="profile-link" href="https://www.linkedin.com/in/nina-gu-577a10212" target="_blank"
+                class="btn contact-details"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
     </section>
-
-    <!-- END CONTACT SECTION -->
-
-    <!-- START FOOTER SECTION -->
 
     <footer class="footer">
         <p>Copyright © Nina</p>
     </footer>
 
-    <!-- END FOOTER SECTION -->
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+    <script data-cfasync="false"
+        src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+</body>
+
 </html>
