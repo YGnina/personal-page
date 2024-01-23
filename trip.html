@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang= "en">
+<html lang="en">
 
 <head>
-    <meta charset = "UTF-8">
-    <title> Nina's Trip and Pictures</title>
+    <meta charset="UTF-8">
+    <title>Nina's Trip and Pictures</title>
     <style>
-        body{
-            margin: 0 auto;
+        body {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #fff;
+            background-color: #1a1a1a;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
         }
-        
+
         .nav {
             display: flex;
             justify-content: flex-end;
@@ -17,123 +21,127 @@
             top: 0;
             left: 0;
             width: 100%;
-            background: brown;
-            box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+            background-color:#734b6d;
             z-index: 10;
         }
+
         .nav-list {
             display: flex;
             margin-right: 2rem;
         }
-        ul {
-            list-style: none;
-        }
 
         .nav-list a {
             display: block;
-            font-size: 2.2rem;
-            padding: 2rem;
+            font-size: 1.2rem;
+            padding: 1rem;
+            color: #ffd700;
         }
-        a {
-            text-decoration: none;
-            color: whitesmoke;
-        }
-
-        /* Add or modify styles for the main content */
-        main {
-            width: 100%;
-            height: 100vh;
+        ul{
+            list-style: none;
         }
 
         
-        .menus{
-            float: left;
-            width: 200px;
-            height: 800px;
-            border: 1px solid grey;
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            padding: 6rem 4rem 4rem; /* Adjusted padding for better visibility */
+            margin-top: 4rem; /* Added margin-top to push content below the navigation bar */
         }
-        .menus .header{
-            background-color: gold;
+
+        .menus {
+            flex-basis: 200px;
+            height: 600px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+        }
+
+        .menus .header {
+            background-color: #ffd700;
             padding: 10px 5px;
+            text-align: center;
         }
 
-        .menus .content a{
+        .menus .content a {
             display: block;
-            padding: 5px 5px;
-            border-bottom: 1px dotted gray;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            text-decoration: none;
+            color: #333;
+            transition: background-color 0.3s ease-in-out;
         }
 
-        .img-container{
+        .menus .content a:hover {
+            background-color: #f9f9f9;
+        }
+
+        .img-container {
+            flex-grow: 1;
             display: flex;
             justify-content: center;
-
+            align-items: center;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        .img{
-            width: 50px;
+        .img-container img {
+            max-width: 100%;
+            max-height: 100%;
         }
 
-        .footer{
-            margin-top: auto; /* Push the footer to the bottom of the page */
+        .footer {
+            background: #222;
+            color: #b0b0b0;
             text-align: center;
             padding: 20px 0;
-            color: #b0b0b0;
+            margin-top: auto;
         }
-
     </style>
 </head>
 
 <body>
 
-<nav id="navbar" class="nav">
-    <ul class="nav-list">
-        <li>
-        <a href="index.html">Home</a>
-        </li>
-        <li>
-        <a href="index.html #experience">Experience</a>
-        </li>
-        <li>
-        <a href="trip.html">Trip</a>
-        </li>
-    </ul>
-</nav>
+    <nav id="navbar" class="nav">
+        <ul class="nav-list">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="index.html#experience">Experience</a>
+            </li>
+            <li>
+                <a href="trip.html">Trip</a>
+            </li>
+        </ul>
+    </nav>
 
-<main>
-    <div class = "menus">
-        <div class="item">
+    <main>
+        <div class="menus">
             <div class="header">Countries that I visited</div>
-            <div class = "content">
+            <div class="content">
                 <a id="china">China</a>
                 <a id="canada">Canada</a>
                 <a id="america">America</a>
                 <a id="mexico">Mexico</a>
             </div>
         </div>
-        
-    </div>
-        
-    <!-- <div class = "img-container">
-        <img src="map.jpg">
-    </div> -->
 
-    <div class="img-container">
-        <img src="pic/map.jpg" id="mapImg">
-        <div id="pictureContainer" style="display: none;">
-        <!-- Add your pictures here -->
-        <img src="pic/guna.jpeg">
-        <img src="pic/picture2.jpg">
-        <!-- Add more pictures as needed -->
+        <div class="img-container">
+            <img src="pic/map.jpg" id="mapImg">
+            <div id="pictureContainer" style="display: none;">
+                <!-- Add your pictures here -->
+                <img src="pic/guna.jpeg">
+                <img src="pic/picture2.jpg">
+                <!-- Add more pictures as needed -->
+            </div>
         </div>
-    </div>
-</main>
+    </main>
 
-<footer class="footer">
-    <p>Map © studycli.org</p>
-    <p>Copyright © Nina</p>
-</footer>
+    <footer class="footer">
+        <p>Map © studycli.org</p>
+        <p>Copyright © Nina</p>
+    </footer>
 
-
-</body>
-
-</html>
